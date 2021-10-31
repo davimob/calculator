@@ -14,9 +14,10 @@ def calculator(num_1, op, num_2):
         result = num_1 / num_2
 
     print(f'{num_1} {op} {num_2} = {result}')
-r = ' '
+
 while True:
     calculator(int(input('Enter a number: ')), str(input('Enter an operation: [-  +  *  /] ')), int(input('Enter another number: ')))
+    r = str(input('Do you wanna continue? [Y/N]')).upper().strip()
     while r not in 'YN':
         r = str(input('Do you wanna continue? [Y/N]')).upper().strip()
     if r in 'N':
